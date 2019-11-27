@@ -5,18 +5,20 @@
 <head>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Maquette Responsive</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
 </head>
 
-<body class="container column">
+<body>
     <!--HEADER AND NAVIGATION BAR-->
-    <nav class="container row whitetext spacebetween">
-        <p class="large container centering">Navigation</p>
+    <nav class="container row whitetext slate spacebetween">
+        <p class="large container pad5 centering">Navigation</p>
         <!--HAMBURGER BUTTON-->
-        <p id="hamburger" class="large container centering">☰</p>
+        <p id="hamburger" class="large container centering black">☰</p>
     </nav>
 
-    <!--Second Section-->
-    <section id="blue" class="container column whitetext">
+    <!--Second Section BLUE-->
+    <section id="blue" class=" skyblue container pad5 column whitetext">
         <div>
             <p class="larger">Awesome free PSD</p><br>
             <p class="larger">Templates & Ressources</p>
@@ -26,19 +28,21 @@
             <a href="" class="medium">BlazRobar.com</a>
             <!--RIGHT ARROW IMAGE-->
             <p class="medium"> > </p>
+            <div class="Hello ! I am here for spacing"></div>
         </div>
     </section>
 
-    <!--Third Section-->
-    <section id="robin" class="container row purpletext spacebetween">
-        <p id="robintext" class="medium">I'm like the Robin Hood of PSD files.</p>
+    <!--Third Section ROBIN-->
+    <section id="robin" class="slate medium pad5left container row purpletext spacebetween">
+        <p id="robintext" class="container pad5 aicenter" >I'm like the Robin Hood of PSD files.</p>
         <!--RIGHT ARROW PINK-->
-        <p class="container centering pink whitetext medium"> > </p>
+        <p class="container centering pink pinkarrow whitetext"> > </p>
     </section>
-
+<!--mediaquery switch-->
+<div class="switcharoo">
     <!--Fourth Section - BIG ARROW PURPLE-->
-    <section id="purple" class="container centering whitetext textcenter">
-        <p class="largest"> > </p>
+    <section id="bigassarrow" class="container column purple  whitetext textcenter">
+       <div></div> <p class="largest"> > </p><div></div>
     </section>
 
     <!--Fifth section - BRIDGE PICTURE-->
@@ -46,16 +50,18 @@
 
     <!--Sixth section - LADY PICTURE-->
     <img src="./assets/img/lady.jpg" alt="" id="lady">
-
+</div>
     <!--Seventh Section - ARTICLE-->
-    <article id="text">
+    <article id="text" class="brokenwhite">
         <a href="" class="large">BlazRobar.com</a>
         <br><br><br><br>
-        <p class="medium">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+        <p class="medium">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            laudantium, totam rem
             aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
             dolores eos qui ratione voluptatem sequi nesciunt."</p><br>
-        <p class="medium">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        <p class="medium">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat."</p>
     </article>
