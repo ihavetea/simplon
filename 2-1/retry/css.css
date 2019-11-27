@@ -1,0 +1,157 @@
+
+
+*{margin: 0;}
+
+body {
+    font-family: monospace;
+}
+
+.whitetext{
+    color: white;
+}
+
+.container{
+    display: flex;
+}
+
+section.column {
+    flex-direction: column;
+}
+
+section.row{
+    flex-direction: row;
+}
+
+header {
+    
+    background-color: black;
+    justify-content: space-around;
+}
+
+header li {
+    list-style: none;
+    display: inline;
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.underline:before {
+    position: absolute;
+    content: "";
+    border-bottom: 5px solid tomato;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+}
+
+
+#icons img {
+    width: 20px;
+    height: 20px;
+}
+
+#profile {
+    width: 350px;
+    height: 350px;
+}
+
+#home {
+    background-image: url("./assets/img/background.jpg");
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#props {
+    justify-content: center;
+    padding: 20px;
+}
+
+#whoami{
+    width:30%;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+
+.pourcent {
+    font-size: 40px;
+    align-items: center;
+}
+
+
+
+/* Animated progress bars */
+
+#skills {
+    align-items: center;
+    position: relative;
+    height: 30%;
+    background-color: black;
+    justify-content: space-around;
+    color: white;
+}
+
+
+.progressbar {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.meter {
+    height: 5px;
+    width: 100px;
+    padding: 5px;
+    background: grey;
+}
+
+.pros {
+    display: block;
+    height: 100%;
+}
+
+.one {
+    background-color: red;
+    animation: progress-1 3s forwards;
+}
+
+@keyframes progress-1 {
+    0% {width: 0;}
+    100% {width: 75%;}
+}
+
+.two {
+    background-color: green;
+    animation: progress-2 3s forwards;
+}
+
+@keyframes progress-2 {
+    0% {width: 0;}
+    100% {width: 50%;}
+}
+
+.three {
+    background-color: cyan;
+    animation: progress-3 3s forwards;
+}
+
+@keyframes progress-3 {
+    0% {width: 0;}
+    100% {width: 80%;}
+}
+
+.four {
+    background-color: indigo;
+    animation: progress-3 3s forwards;
+}
+
+@keyframes progress-3 {
+    0% {width: 0;}
+    100% {width: 40%;}
+}
+

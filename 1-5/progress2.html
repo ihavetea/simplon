@@ -1,0 +1,84 @@
+<style>
+    .meter {
+        height: 20px;
+        width: 1000px;
+        padding: 10px;
+        background: grey;
+    }
+
+    .one {
+        display: block;
+        height: 100%;
+        background-color: red;
+        animation: progress-1 3s forwards;
+    }
+
+    @keyframes progress-1 {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 75%;
+        }
+    }
+
+
+    .two {
+        display: block;
+        height: 100%;
+        background-color: green;
+        animation: progress-2 3s forwards;
+    }
+
+    @keyframes progress-2 {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 50%;
+        }
+    }
+
+    .three {
+        display: block;
+        height: 100%;
+        background-color: cyan;
+        animation: progress-3 3s forwards;
+    }
+
+    @keyframes progress-3 {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 45%;
+        }
+    }
+
+</style>
+
+
+
+
+
+<div class="meter">
+    <span class="one">
+    </span>
+</div>
+
+
+<br>
+<div class="meter">
+    <span class="two">
+    </span>
+</div>
+<br>
+<div class="meter">
+    <span class="three">
+    </span>
+</div>
+<br>
+<div class="meter">
+    <span class="four">
+    </span>
+</div>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body {
+        margin: 0px;
+        font-family: monospace;
+        display: grid;
+        position: absolute;
+        min-height: 100%;
+        min-width: 100%;
+    }
+
+
+
+    nav {
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-image: black;
+        justify-content: space-around;
+    }
+
+
+    header ul {
+        list-style-type: none;
+        padding: 0%;
+    }
+
+    header li {
+        display: inline;
+    }
+
+    main {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        min-height: 30%;
+        color: white;
+        background-image: url("background.jpg");
+    }
+
+
+    .underline {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 5px;
+    }
+
+    .underline:before {
+        position: absolute;
+        content: "";
+        border-bottom: 5px solid tomato;
+        width: 50%;
+        height: 1px;
+        bottom: 0;
+    }
+
+    .contact {
+        list-style-image: url("arrow.svg");
+        list-style-position: inside;
+    }
+
+    .icons {
+
+
+        display: flex;
+        justify-content: space-around;
+        width: 20px;
+        height: 20px;
+
+
+
+    }
+
+    #jesuis {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #apropos {
+        display: flex;
+        position: relative;
+        height: 200%;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #competences {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: 30%;
+        background-color: black;
+        justify-content: space-around;
+        color: white;
+    }
+
+    #experiences {
+        position: relative;
+        height: 30%;
+        background-color: grey;
+    }
+
+    #portfolio {
+        position: relative;
+        height: 30%;
+        background-color: yellow;
+    }
+
+    #whoami {
+        width: 30%;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .progressbar {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .meter {
+        height: 5px;
+        width: 100px;
+        padding: 5px;
+        background: grey;
+    }
+
+    .one {
+        display: block;
+        height: 100%;
+        background-color: red;
+        animation: progress-1 3s forwards;
+    }
+
+    @keyframes progress-1 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 75%;
+        }
+    }
+
+    .two {
+        display: block;
+        height: 100%;
+        background-color: green;
+        animation: progress-2 3s forwards;
+    }
+
+    @keyframes progress-2 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 50%;
+        }
+    }
+
+    .three {
+        display: block;
+        height: 100%;
+        background-color: cyan;
+        animation: progress-3 3s forwards;
+    }
+
+    @keyframes progress-3 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 80%;
+        }
+    }
+
+    .four {
+        display: block;
+        height: 100%;
+        background-color: indigo;
+        animation: progress-3 3s forwards;
+    }
+
+    @keyframes progress-3 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 40%;
+        }
+    }
+
+    img {
+        height: 100%;
+
+    }
+
+    .pourcent {
+        font-size: 40px;
+        align-items: center;
+    }
+</style>
+
+<head>
+    <title>Hello</title>
+</head>
+
+
+<body>
+    <main>
+
+
+        <header>
+            <nav>
+                <p id="name">William Szurkowski</p>
+                <ul>
+                    <li>Acceuil</li>
+                    <li>A propos</li>
+                    <li>Competences</li>
+                    <li>Experiences</li>
+                    <li>Portflolio</li>
+                </ul>
+            </nav>
+            <div id="jesuis">
+                <span>Je ne suis pas Photopgraphe</span>
+                <span>FLECHE</span>
+            </div>
+        </header>
+
+
+        <div id="apropos">
+            <article id="whoami">
+                <p class="underline">A propos</p>
+                <br>
+                <p>John DOE, Dev Web</p>
+                <br>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        ."
+                        </p>
+                <ul class="contact">
+                    <li>Nom - William Szurkowski</li>
+                    <li>E-mail - William.Szurkowski@gmail.com</li>
+                    <li>Telephone - 06 18 65 82 78 </li>
+                </ul>
+                <div class="icons">
+                    <img src="facebook.png" alt="">
+                    <img src="twitter.png" alt="">
+                    <img src="instagram.png" alt="">
+                </div>
+            </article>
+            <img src="jpg.png" alt="profile picture">
+
+        </div>
+
+
+
+        <div id="competences">
+
+            <p class="underline" style="font-size: 30px;">Competences</p>
+           
+            <br><br><br>
+
+            <div class="progressbar">
+                <span class="pourcent">90%</span>
+                <div>
+                    Photoshop
+                    <div class="meter">
+                        <span class="one"></span>
+                
+                    </div>
+                </div>
+                <span class="pourcent">50%</span>
+                <div>
+                    HTML CSS JS
+                    <div class="meter">
+                        <span class="two">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br>
+            <div class="progressbar">
+                <span class="pourcent">70%</span>
+                <div>
+                    Photoshop
+                    <div class="meter">
+                        <span class="three">
+                        </span>
+                    </div>
+                </div>
+                <span class="pourcent">40%</span>
+                <div>
+                    JQUERY
+                    <div class="meter">
+                        <span class="four">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+                vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+                qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        </div>
+
+
+
+
+        <div id="experiences">
+
+        </div>
+
+
+
+
+
+
+        <div id="portfolio"></div>
+
+        <footer>
+
+        </footer>
+
+
+    </main>
+
+    </main>
+</body>
+
+
+</html>

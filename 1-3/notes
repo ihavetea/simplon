@@ -1,0 +1,44 @@
+
+
+
+
+
+CHECK SEMANTICS
+
+somethin about <nav>
+<div>
+
+It's the correct use of tags.
+
+
+
+
+
+display block == puts elements in rows
+display inline == columns
+
+
+use color blocks to place elements
+
+
+
+display flex always affects the child elemts
+
+
+
+
+% se refere au bloc parent
+
+VH VW = se refere a la taille de la page entiere
+
+
+* {
+
+    APPLYS CHANGES TO EVERYTHING
+
+}
+
+body {
+    margin = 0;
+    to remove scroll:wq
+}
