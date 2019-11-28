@@ -11,6 +11,12 @@
 .whitetext {color: white;}
 .purpletext {color: #7D7089}
 
+/* STYLIN */
+li {list-style-type: none; display: inline;}
+.hyde{display:none;}
+.jekyll{height: 100%;}
+.switcharoo{display: flex; flex-direction: column;}
+
 /* SPACING */
 .spacebetween{justify-content: space-between;}
 .spacearound{justify-content: space-around;}
@@ -29,6 +35,7 @@
 .purple{background-color:#563369;}
 
 /* FONT SIZES */
+.small{font-size: 1.2em;}
 .medium{font-size: 2em;}
 .large{font-size: 2.5em;}
 .larger{font-size: 3em;}
@@ -37,7 +44,6 @@
 
 /* THIS IS A MYSTERY */
 body{display: grid; height: 100%;}
-
 
 /*////////////////////////////////*/
 /* NAV BAR */
@@ -70,20 +76,21 @@ nav {height:100%;}
 #text{padding: 10%; height: 100%;}
 
 
-.switcharoo{
-	display: flex;
-	flex-direction: column;}
+
+/*////////////////////////////////*/
+/* SWITCHIN */
 
 @media only screen and (min-width: 980px) {
 	.switcharoo{
 		display: flex;
 		flex-direction: row;
 	}
+	#bigassarrow {height:33%; padding: 13.3%; width:34%;}
 	#bridge{width: 34%;}
 	#lady{width:33%;}
-	#bigassarrow {height:33%; padding: 13.3%; width:34%;}
 
-
+	.jekyll{display: none;}
+	.hyde{display: grid; padding: 5%;}
 }
 
 
