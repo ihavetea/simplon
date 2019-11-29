@@ -10,7 +10,43 @@
 
 Formateur : Jeffrey
 
-KANBAN > Flux de production a gerer
+
+
+## SCRUM
+PRODUCT OWNER
+ > Receuille les besoins du client et kes retranscrire sous forme de liste de fonctionnalites > Liste de Users Story
+ > Decoupe le projet en themes, epics, user story > ?
+ User story doit etre realise en un seul sprint
+ User Story doit etre // INSECABLE //
+                         TESTABLE
+                         
+                         WHAT IS ICE / RICE ? MoSCow ?
+
+            DIAGRAMME DE GANT  
+            SPRINT PLANNING = 2h / semaine
+            Sprint = coeur de scrum
+            Chaque sprint a son objectif auto organisation Increment produit
+            L'EPO est ke seuk qui peut annuler un sprint > par exemple si le besoin a change si le client n''a pas oaye
+
+            check terme triangle d equalite
+            
+
+WHAT IS TECHNIC DEBT
+
+
+
+
+
+SCRUM MASTER IS ONT A DEV
+DEVOPS > What is a dev ops
+
+
+Product Backlog = cahier des charges
+Difference avec un cahier des charges classique
+Il est evolutif
+Sprint planning 
+
+## KANBAN > Flux de production a gerer
     Stop starting, start finishing
         Origines > Toyota avec Lean Manufacturing 
             Style de management visuel > fonctionne avec un tableau 

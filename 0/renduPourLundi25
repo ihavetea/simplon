@@ -82,11 +82,39 @@ V. CREER UNE BASE DE DONNEES
         > ORACLE 
         > APACHE
         >MySQL
-
+    Query Analyzer
+    Data Security
+    Tables, columns,rows
+    Server side triggers, stored procedures and functions
+    Keys
 
 
 VI. DEV LES COMPOSANTS d'ACCES AUX DONNEES
 
+    Developper dans un language objet
+    Use libraries 
+    consultation creation et mise a jour 
+    Documenter les composants
+
+
 VII. DEV LA PARTIE BACK END D'UNE APPLI WEB OU MOBILE
 
+    REST/SOAP
+    SQL
+    RUBY ON RAILS
+    PYTHON
+
+    FOR MOBILE > ANDROID > JAVA
+                 iOS > Objective-C
+                 Windows Phone > C#
+
 VIII. ELABORER ET METTRE EN OEUVRE DES COMPOSANTS DANS UNE APPLICATION DE GESTION DE CONTENU OU E-COMMERCE
+
+    COMMUNICATION
+    SOCIAL NETWORK
+    WEBSITE TRAFFIC
+    DATA ANALYCTICS
+    GOOGLE SERVICES 
+    ADS
+    SEO
+    GROWTH HACKING
