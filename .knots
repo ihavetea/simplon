@@ -1,8 +1,147 @@
+ 
+//////////////////////////
+01.12
+//////////////////////////
+
+
+//////////////////////////
+29.11
+//////////////////////////
+
+Formateur : Jeffrey
+
+KANBAN > Flux de production a gerer
+    Stop starting, start finishing
+        Origines > Toyota avec Lean Manufacturing 
+            Style de management visuel > fonctionne avec un tableau 
+                
+                Kanban est un meta-process : qui s'applique a un process deja existant.
+
+        KANBAN veut "dire petite carte"
+
+        META PROCESS
+
+        3 principes
+            > Commencer la ou on est est
+        Accepter de poursuivre un changement evolutif et incremental
+        Favorise leadership a tous les niveaux
+
+
+
+
+
+//////////////////////////
+28.11
+//////////////////////////
+
+Formateur : Jeffrey
+
+
+
+TJM >> Taux Journalier Moyen
+
+LINK == AGILEMANIFESTO.ORG
+
+Sujet : Methode Agilite
+    > Processus iteratif
+        > Avancer par petit morceaux
+
+    > Methode de gestion de projet
+    > Taylorisme > SPecialisation de chque tache > Les employes se deplacent
+    > Fordisme > la chaine de production se deplace / modele cloisonne ne favorise pas la collaborataion
+
+    > Methode predictive > ?
+    > Modele Cyneifn > ?
+    > Darkness Principle > ? > Focus only on your task, ignore big picture
+    > Monde VICA > ?
+    > TOYOTISME > ? > Feedback en post prodution 
+        > Inversement, methode agile consiste a obtenir du feedback avant la production
+    
+    > Roue de Deming > ?
+
+    > "Entreprise liberee" > Next level Agilite
+    > Holacratie
+
+    > CYCLE EN CASCADE
+        > Analyse du besoin
+            > Specifications 
+                > Conception
+                    > Codage
+                        > Test
+                            > Recette
+
+    > Cycle en V 
+        > Same thing but with validation on each step
+
+    > Toyota
+        > Voir Line Management > RED CORD > Each element of the chain can stop the whole production 
+        > Stock en flux tendu
+        > Macdo uses this method
+        > Waste management - time, products, mouvements
+
+        Valeurs Agilite
+            > On privilegie l'interactivite entre les individus, discussion, collaboration, plutot qu'outils et processus
+            > Negociation client plus que la negociation contractuelle
+            > Logiciel fonctionnel plus que documentation exhaustive
+            > Adaptivite
+
+        Back Log > Remplace le cahier des charges / "cahier des charges vivant"
+
+        Prioriser la valeur
+        Livrer frequemment > Plus de fonctionnalite aussi petite soit la veleur
+        Confiance entre collaborateurs
+        Dialogue Face a face > conversation Paper Board
+
+        
+        logiciel operationnel > une tache est finie a 100% ou ne l'est pas
+
+
+        Burndown Chart > ?
+
+        Controle Qualite > Eviter ce que l'on appelle la dette technique
+
+        Simplicite > ne definissez que ce qui est utile pour la premiere iteration 
+            > line Management > On evite le gaspillage ne pas faire complique quand on peut faire simple
+                Minimiser le travail inutile
+        
+        Auto Organiser
+            Les equipes savent de quoi elles sont capaables
+
+        Amelioration Continue
+            Methode Kamdan Kaban Kanban et Scrap/SCRUM?
+                
+            Methode Kanban > Methode toyota
+
+        
+        >>>>
+        Monter une startup
+
+? >>>   Construire une MVP > Minimum viable projecti/product
+
+        FAIL FAST FAIL CHEAP        
+
+        On mesure, retours utilisateursi par A/B testing > On obtient des donnees
+            >> Pivoter, modifier son produit [changer de cible, ajouter ou enlever des fonctionnalites]
+                Changement de Busfidliness Model
+                    Changement de canaux > Magasin, web
+                    Changement de segment
+                    Changement de besoin
+                    Changement de plateforme
+                    Changement de technique / technologie
+
+                    Growth Hacking Visibility Notoriete
+        
+        Exemple de pivot : CRITEO.FR
+                           SCOOPIT.FR
+                           Feedly > Client RSS
+                           Tweetdeck
+
+
+
+
 //////////////////////////
 27.11
 //////////////////////////
-
-
 
 
 
