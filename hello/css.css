@@ -1,0 +1,80 @@
+/* ---------------------- */
+/* Display */
+
+.container{display: flex;}
+.dgrid {display: grid;}
+.row {flex-direction: row;}
+.column {flex-direction: column;}
+.jccenter {justify-content: center;}
+.jcsb {justify-content: space-between;}
+.jcsa {justify-content: space-around;}
+.aicenter {align-items: center;}
+.height100{height: 100%;}
+
+/* ---------------------- */
+/* NavBar */
+.navbar{list-style: none; display:inline;}
+li {display:inline;}
+
+/* ---------------------- */
+/* Colors */
+/* Background Colors */
+.bcred {background-color: #CE0033;}
+.bcblue {background-color: #1B3549;}
+.bcwhite {background-color: white;}
+.bcgrey{background-color:grey;}
+.bcblack{background-color: black;}
+
+.bcyellow{background-color:yellow;}
+.bccyan{background-color: cyan;}
+.bcgreen{background-color: green;}
+
+
+/* Text Colors */
+.textwhite {color: white;}
+.textblack {color: black;}
+
+/* Font Size */
+.textmedium {font-size: 1em;}
+.textlarge {font-size: 1.8em}
+
+
+/* ---------------------- */
+/* Animated progress bars */
+
+/* Whole COMPETENCES section proprieties */
+#competences {position: relative; height: 30%;}
+
+
+/* Container for the parent DIV progress bars */
+.progresscontainer {width: 30%; height: 100%;}
+
+/* Background meter is grey */
+.meter {height: 5px; width: 100px; padding: 5px;}
+
+/* Progress Bar 1 */
+.one {animation: progress-1 3s forwards;}
+@keyframes progress-1 {0% {width: 0;} 100% {width: 75%;}}
+
+/* Progress Bar 2 */
+.two {animation: progress-2 3s forwards;}
+@keyframes progress-2 {0% {width: 0;} 100% {width: 50%;}}
+
+/* Progress Bar 3 */
+.three {animation: progress-3 3s forwards;}
+@keyframes progress-3 {0% {width: 0;} 100% {width: 75%;}}
+
+/* Progress Bar 4 */
+.four {animation: progress-4 3s forwards;}
+@keyframes progress-4 {0% {width: 0;} 100% {width: 50%;}}
+
+/* Progress Bar 5 */
+.five {animation: progress-5 3s forwards;}
+@keyframes progress-5 {0% {width: 0;} 100% {width: 50%;}}
+
+.pourcent {
+    font-size: 40px;
+    align-items: center;
+}
+
+
