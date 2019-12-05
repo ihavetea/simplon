@@ -1,31 +1,29 @@
-// RAPPEL ---->
 
-var leNomDeMaVariable = 'la valeur de ma variable'; // Déclarer une variable (pour la réutiliser plus tard)
-
-var elementHtml = document.getElementById('idDeMonElementHtml'); // document fait réference au document HTML (tout ce qui est compris entre les balise <html>)
-// getElementById est une fonction prédéfinis par Javascript qui permet de ciblé un element html grace à son id
-
-// onclick, onmouseover, onload, etc.. :
-    // sont des fonction prédefinis que l'on peut utiliser sur des elements html et qui prenne en paramettre un attribut 'event'
-    // Pour pouvoir changer le fonctionnement de base d'un evenement onclick --
-        // -- ou autres il faut lui assigné en valeur une nouvelle fonction (souvent une fonction anonyme)
-        // exemple : elementHtml.onclick = function() { ici le code javascript à executer au click de 'element' }
-
-// elementHtml.innerText = 'texte a insérer dans l\'element html ciblé au préalable'; --> innerText pour insérer du texte
-// elementHtml.innerHTML = '<p>balise html a insérer dans l\'element html ciblé au préalable</p>'; --> innerHTML pour insérer des balises html
-
-
-//    <----- END
-
+//SALUT MATTHIEU
+// ICI LE JS SURVEILLE LE BOUTON HTML
 const button = document.querySelector('button');
+
+//ICI ON RECUPERE LE CONTENU du <ul id="todoList"></ul> ET ON LE STOCKE DANS UNE VARIABLE list
+//POUR EVITER DE DEVOIR RETAPER document.getElementById('todoList'), MAIS ON PEUT FAIRE SANS.
 let list = document.getElementById('todoList')
 
+//ICI ON GENERE UN TAG <li></li>
 var newListItem = document.createElement("li");
+
+//ICI ON GENERE LE TEXTE A METTRE DANS LE NOUVEAU <li></li>
 var addedText = document.createTextNode('Hello Brian');
 
 
 button.onclick = function () {
+
+    //CONSOLE LOG POUR DEBUGGER C'EST OPTIONEL
     console.log(list);
+
+    //ICI TU AJOUTES LE TEXTE Hello Brian STOCKE DANS LA VARIABLE newListItem DANS LES TAGS <li></li>
+    //APPEND VEUT DIRE RAJOUTER A LA FIN
     newListItem.appendChild(addedText);
+
+    // ICI TU BALANCES TON COMBO <li>Hello Brian</li> EN BAS DU <ul id="todoList"> DANS LE HTML
+    // TU "APPEND" <li>Hello Brian</li> VERS document.getElementById('todoList')
     list.appendChild(newListItem);
 }
