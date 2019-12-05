@@ -7,13 +7,14 @@ const button = document.querySelector('button');
 //POUR EVITER DE DEVOIR RETAPER document.getElementById('todoList'), MAIS ON PEUT FAIRE SANS.
 let list = document.getElementById('todoList')
 
-//ICI ON GENERE UN TAG <li></li>
+//ICI ON GENERE UN TAG <li></li> QUE L'ON VA UTILISER DANS LA FONCTION
 var newListItem = document.createElement("li");
 
-//ICI ON GENERE LE TEXTE A METTRE DANS LE NOUVEAU <li></li>
+//ICI ON GENERE LE TEXTE A METTRE DANS LE NOUVEAU <li></li> QUE L'ON VA UTILISER DANS LA FONCTION
 var addedText = document.createTextNode('Hello Brian');
 
 
+// .onclick REAGIT a button ( = document.querySelector('button');) ET PERMET DE LANCER LA FONCTION
 button.onclick = function () {
 
     //CONSOLE LOG POUR DEBUGGER C'EST OPTIONEL
