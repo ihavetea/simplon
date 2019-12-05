@@ -4,7 +4,7 @@
 // ICI LE JS SURVEILLE LE BOUTON HTML
 const surveilleBouton = document.querySelector('button');
 
-//ICI ON RECUPERE LE CONTENU du <ul id="todoList"></ul> ET ON LE STOCKE DANS UNE VARIABLE list
+//ICI ON RECUPERE LE CONTENU DU <ul id="todoList"></ul> ET ON LE STOCKE DANS UNE VARIABLE touteLaTodoList
 //POUR EVITER DE DEVOIR RETAPER document.getElementById('todoList'), MAIS ON PEUT FAIRE SANS.
 let touteLaTodoList = document.getElementById('todoList')
 
