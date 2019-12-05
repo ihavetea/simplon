@@ -26,6 +26,6 @@ button.onclick = function () {
     newListItem.appendChild(addedText);
 
     // ICI TU BALANCES TON COMBO <li>Hello Brian</li> EN BAS DU <ul id="todoList"> DANS LE HTML
-    // TU "APPEND" <li>Hello Brian</li> VERS document.getElementById('todoList') 
+    // TU "APPEND" <li>Hello Brian</li> VERS document.getElementById('todoList') (= list)
     list.appendChild(newListItem);
 }
