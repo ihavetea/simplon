@@ -24,8 +24,6 @@ window.onload = function () {
   const connexionButton = connexionForm.querySelector('button.square-button');
   const registerButton = registerForm.querySelector('button.square-button');
 
-
-
   formSwitch[0].onclick = function () {
     connexionForm.style.display = "none";
     registerForm.style.display = "flex";
@@ -98,6 +96,8 @@ window.onload = function () {
 
     var retrievedObject = localStorage.getItem('user');
     console.log('retrievedObject: ', JSON.parse(retrievedObject));
+    
+    window.location.href = "home.html";    
   }
 }
 
