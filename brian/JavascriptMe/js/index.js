@@ -45,14 +45,14 @@ window.onload = function () {
     // FUNCTIONS --------------------------------------------------- //
 
     // Is it all lower case?
-    function checkLowerCase(str) {return str === str.toLowerCase();};
+    function checkLowerCase(str) { return str === str.toLowerCase(); };
 
     // Has Number?
-    function checkNumber(str) {return /\d/.test(str);};
+    function checkNumber(str) { return /\d/.test(str); };
 
     // More than 5 & 8 Characters?
-    function minimum5(str) {return str.length > 4;};
-    function minimum8(str) {return str.length > 7;};
+    function minimum5(str) { return str.length > 4; };
+    function minimum8(str) { return str.length > 7; };
 
     // --------------------------------------------------------------- //
 
@@ -62,8 +62,8 @@ window.onload = function () {
         let email = loginform.querySelector('input[type=email]').value;
         let pass = loginform.querySelector('input[type=password]').value;
         //Checking Password
-        if (checkNumber(pass) && (!(checkLowerCase(pass)) && (minimum8(pass)))){console.log("Password : 1st Password OK");}
-        else{console.log("Password : Input at least 8 Characters, a Number, an Upper Case");}
+        if (checkNumber(pass) && (!(checkLowerCase(pass)) && (minimum8(pass)))) { console.log("Password : 1st Password OK"); }
+        else { console.log("Password : Input at least 8 Characters, a Number, an Upper Case"); }
 
     };
 
@@ -79,47 +79,72 @@ window.onload = function () {
         let pass1 = pass[1].value;
 
         // Checking Text for 5 minimum
-        if (minimum5(text)) {console.log("Name : Valid Name");}
-        else {console.log("Name : Input More than 5 Characters")}
+        if (minimum5(text)) { console.log("Name : Valid Name"); }
+        else {
+            console.log("Name : Input More than 5 Characters");
+            // signupform.querySelector('input[type=text][placeholder]').value = "More than 5 Characters";
+            //           formblock = signupform.querySelectorAll(".form-block");
+            //         formblock[1].append("Invalid name \n");
+            //formblock = signupform.getElementsByClassName("form-block");
+            //formblock[1].innerHtml += "<p>NO</p>";
 
+        var pa = document.createElement("p");
+        pa.textContent = "Title";
+        document.appendChild(pa);
+
+        }
         //Checking Pass0 for Maj, 8 Chars, Number
-        if (checkNumber(pass0) && (!(checkLowerCase(pass0)) && (minimum8(pass0)))){console.log("Password : 1st Password OK");}
-        else{console.log("Password : Input at least 8 Characters, a Number, an Upper Case");}
+        if (checkNumber(pass0) && (!(checkLowerCase(pass0)) && (minimum8(pass0)))) { console.log("Password : 1st Password OK"); }
+        else {
+            console.log("Password : Input at least 8 Characters, a Number, an Upper Case");
+         //   formblock = signupform.querySelectorAll(".form-block")[1];
+           // formblock.innerHtml += "<p>NO</p>";
+        }
+
+        var h1 = document.createElement("h1");
+        h1.textContent = "Title";
+        document.body.appendChild(h1);
 
         //Checking Pass1 for Maj, 8 Chars, Number
-        if (checkNumber(pass1) && (!(checkLowerCase(pass1)) && (minimum8(pass1)))){console.log("Password : 2nd Passowrd OK");}
-        else{console.log("Password : Input at least 8 Characters, a Number, an Upper Case");}
+        if (checkNumber(pass1) && (!(checkLowerCase(pass1)) && (minimum8(pass1)))) { console.log("Password : 2nd Passowrd OK"); }
+        else { console.log("Password : Input at least 8 Characters, a Number, an Upper Case"); }
 
         // Check Password Match
-        if(pass0 == pass1){console.log("Passwords Match");}
-        else{console.log("Passwords Do Not Match");}
+        if (pass0 == pass1) { console.log("Passwords Match"); }
+        else {
+            console.log("Passwords Do Not Match");
+            formblock = signupform.querySelectorAll(".form-block");
+            formblock[1].append("Passwords do not match");
+        }
     }
 }
 
 
-    // --------------------- STEP 3 -------------------------
-    // une fois nos saisies utilisateurs stocker dans des variables faite en sorte de :
-    // A L'INSCRIPTION :
+// --------------------- STEP 3 -------------------------
+// une fois nos saisies utilisateurs stocker dans des variables faite en sorte de :
+// A L'INSCRIPTION :
 
-    // 1. le code commenter ci-dessous devras etre fonctionnelle (pour ça vous allez devoir déclarer une class 'User' -> POO Javascript)
-    // cette classe devras avoir des les propriétés 'username', 'email', 'password' ainsi qu'une methode nommé 'getUsername' --->
-    // --> qui devra retourner l'username de l'instance courante de 'User'
+// 1. le code commenter ci-dessous devras etre fonctionnelle (pour ça vous allez devoir déclarer une class 'User' -> POO Javascript)
+// cette classe devras avoir des les propriétés 'username', 'email', 'password' ainsi qu'une methode nommé 'getUsername' --->
+// --> qui devra retourner l'username de l'instance courante de 'User'
 
-    let User = class {
+let User = class {
 
-        constructor(name, email, password){
+    constructor(name, email, password) {
         this.name = name;
         this.email = email;
         this.password = password;
-        }
-        getUsername (){
-            let a = this.name.split(" ");
-            return a[0];
-        }
-        }
-    
-    var user = new User('ToTo (username)', 'toto@email.fr (email)', 'tamereenslip (password)');
-    console.log('Bonjour ' + user.getUsername() + ' !');
+    }
+    getUsername() {
+        let a = this.name.split(" ");
+        return a[0];
+    }
+}
+
+var user = new User('ToTo (username)', 'toto@email.fr (email)', 'tamereenslip (password)');
+console.log('Bonjour ' + user.getUsername() + ' !');
+
+
 
 
     // 2. Modifier ensuite le code ci dessus pour qu'a l'instantation d'un nouvelle 'User' ---
