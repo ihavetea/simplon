@@ -41,45 +41,63 @@ window.onload = function () {
 
     //     articles = new Article(articles[0].id, articles[0].title);/
     //    article.setId(22);
-    console.log(articles.length);
 
+    //console.log(Article[0].getId());
 
+    let articleArray = [];
+    for (let i = 0; i < articles.length; i++) {
+      let b = articles[i];
+      articleArray.push(new Article(b.id, b.title, b.content, b.resumes, b.author, b.publishedDate, b.img, b.tags));
+    }
 
+    
+    
+    for (let i = 0; i < articleArray.length; i++) {
 
-    for (const i = 0; i < articles.length; i++) {
-      console.log(i);
       // <article class="article-preview" data-id="1">
-      const articleElement = document.createElement('article');
-      articleElement.setAttribute('data-id', articles[i].getId());
+      const articleElementCreate = document.createElement('article');
+      articleElementCreate.setAttribute('data-id', articleArray[i].getId());
 
+      const articleElement = document.querySelector('[data-id="' + i + '"]');
+      console.log("check " + i);
+      console.log(document.querySelector('article'));
 
       ////     <h2>Un super article 1</h2>
-      const articleTitle = articleElement.createElement('h2');
-      articleTitle.innerText = articles[i].getTitle();
+      const h2 = document.createElement("h2");
+      const articleTitle = articleElement.appendChild(h2);
+      articleTitle.innerText = articleArray[i].getTitle();
 
       ////     <div class="article-preciew-body">
-      const articlePreviewBody = articleElement.createElement('div');
+      const div1 = document.createElement("div");
+      const articlePreviewBody = articleElement.appendChild(div1);
       articlePreviewBody.classList.add("articlePreviewBody");
 
       ////////         <div class="article-preview-img">
-      const articlePreviewImg = articlePreviewBody.createElement('div');
+      const div2 = document.createElement("div");
+      const articlePreviewImg = articlePreviewBody.appendChild(div2);
       articlePreviewImg.classList.add("articlePreviewImg");
-      const APIi = articlePreviewImg.createElement('img');
-      APTi.setAttribute('src', articles[i].getImg())
+
+      const img = document.createElement("img");
+      const APIi = articlePreviewImg.appendChild(img);
+      APIi.setAttribute('src', articleArray[i].getImg())
 
       ////////         <div class="article-preview-content">
-      const articlePreviewContent = articlePreviewBody.createElement('div');
+      const div3 = document.createElement("div");
+      const articlePreviewContent = articlePreviewBody.appendChild(div3);
       articlePreviewContent.classList.add("articlePreviewContent");
-      const APCp = articlePreviewContent.createElement('p');
-      APCp.innerText = articles[i].getResume();
+
+      const p1 = document.createElement("p");
+      const APCp = articlePreviewContent.appendChild(p1);
+      APCp.innerText = articleArray[i].getResumes();
 
       ////////         <div class="article-preview-tags">
-      const articlePreviewTags = articlePreviewBody.createElement('div');
+      const div4 = document.createElement("div");
+      const articlePreviewTags = articlePreviewBody.appendChild(div4);
       articlePreviewTags.classList.add("articlePreviewTags");
-      const APTp = articlePreviewTags.createElement('p');
-      APCt.innerText = articles[i].getTags();
 
-
+      const p2 = document.createElement("p");
+      const APTp = articlePreviewTags.appendChild(p2);
+      APTp.innerText = articleArray[i].getTags();
     }
 
 
