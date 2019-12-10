@@ -1,0 +1,41 @@
+/*RESET*/
+*{margin:0;padding:0}
+header{justify-content: space-between}
+header nav ul li, header h1 {margin: 20px;}
+
+/*CONTAINER*/
+.flex-row{display:flex;flex-direction:row; flex-wrap: wrap}
+.flex-column{display:flex;flex-direction:column;}
+div{height: 500px}
+
+/*ITEMS*/
+.desk1{width: 100%}
+.desk2{width: 50%}
+.desk4{width: 25%}
+
+.bg-black{background-color: black}
+.bg-black > *{color: white}
+.bg-green{background-color: green}
+.bg-red{background-color: red}
+.bg-blue{background-color: blue}
+.bg-pink{background-color: pink}
+.bg-purple{background-color: purple}
+.bg-brown{background-color: brown}
+.bg-yellow{background-color: yellow}
+.bg-orange{background-color: orange}
+
+/*MEDIA*/
+/*LG*/
+@media screen and (max-width: 1200px) {}
+/*MD*/
+@media screen and (max-width: 980px) {}
+/*SM*/
+@media screen and (max-width: 768px) {
+    .desk2{width: 100%}
+    .desk4{width: 50%}
+}
+/*XS*/
+@media screen and (max-width: 576px) {
+    .desk4{width: 100%}
+}
+

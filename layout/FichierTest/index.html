@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Responsive Design</title>
+        <!--     style     -->
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <header class="flex-row bg-black">
+            <h1>Hello World !</h1>
+            <nav class="">
+                <ul class="flex-row">
+                    <li>un</li>
+                    <li>deux</li>
+                    <li>trois</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="flex-row">
+                <!--On a ajouté un id (ici "test") dans la div pour ensuite pouvoir modifié sa classe-->
+                <div class="bg-green desk1" id="test"></div>
+            </section>
+            <section class="flex-row">
+                <div class="desk2 bg-red"></div>
+                <div class="desk2 bg-blue"></div>
+            </section>
+            <section class="flex-row">
+                <div class="desk4 bg-pink"></div>
+                <div class="desk4 bg-orange"></div>
+                <div class="desk4 bg-yellow"></div>
+                <div class="desk4 bg-brown"></div>
+            </section>
+            <script src="app.js"></script>
+        </main>
+
+        <footer></footer>
+
+    </body>
+</html>
