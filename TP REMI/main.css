@@ -1,0 +1,14 @@
+
+
+
+.container{display: flex;}
+.row{flex-direction: row;}
+.column{flex-direction: column;}
+
+.bcgrey{background-color: grey;}
+
+.vh100{min-height: 100vh;}
+
+.minheight200{min-height: 20vh;}
+.minheight400{min-height: ;}
+

@@ -49,23 +49,39 @@ window.onload = function () {
       let b = articles[i];
       articleArray.push(new Article(b.id, b.title, b.content, b.resumes, b.author, b.publishedDate, b.img, b.tags));
     }
+    console.log(articleArray)
 
-    
-    
+
+    var articleElementCreate;
+
     for (let i = 0; i < articleArray.length; i++) {
-
+      console.log(i);
       // <article class="article-preview" data-id="1">
-      const articleElementCreate = document.createElement('article');
+      articleElementCreate = document.createElement('article');
       articleElementCreate.setAttribute('data-id', articleArray[i].getId());
+console.log(articleElementCreate);
+      document.getElementsByTagName('section')[0].appendChild(articleElementCreate)
+    };
 
-      const articleElement = document.querySelector('[data-id="' + i + '"]');
+    
+
+
+    for (let i = 0; i < articleArray.length; i++) {
+      
+      console.log(i);
+      let articleElement = document.querySelector('article');
+    //  let articleElement = document.querySelector('[data-id="' + i + '"]');
       console.log("check " + i);
-      console.log(document.querySelector('article'));
+      console.log('[data-id="' + i + '"]');
+      console.log(articleElement)
 
-      ////     <h2>Un super article 1</h2>
+      ////     <h2>Un super ar      ticle 1</h2>
       const h2 = document.createElement("h2");
       const articleTitle = articleElement.appendChild(h2);
-      articleTitle.innerText = articleArray[i].getTitle();
+      console.log(articleTitle);
+      console.log(articleArray[0].getTitle()); 
+      articleTitle.textContent = articleArray[i].getTitle(); //////////////////////////////////
+
 
       ////     <div class="article-preciew-body">
       const div1 = document.createElement("div");
